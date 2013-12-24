@@ -40,7 +40,7 @@
 - (void)commonInit {
   self.calendar   = NSCalendar.currentCalendar;
   self.fromDate   = [NSDate.date mn_beginningOfDay:self.calendar];
-  self.toDate     = [self.fromDate dateByAddingTimeInterval:7776000];
+  self.toDate     = [self.fromDate dateByAddingTimeInterval:MN_YEAR * 0.25];
   self.daysInWeek = 7;
   
   self.headerViewClass  = MNCalendarHeaderView.class;
